@@ -13,7 +13,7 @@ pip install dgl_cu101-0.6.1-cp37-cp37m-manylinux1_x86_64.whl
 ```
 # Run
 ## 1.Generate amino acid embedding and contact map files, run the following code separately.
-cd data data pre-processing
+cd data pre-processing
 ```
 python generate_embeddings.py
 python generate_contact_map.py
