@@ -14,8 +14,8 @@ if len(sys.argv) > 1:
     datasetname, rst_file, pkl_path, batchsize = sys.argv[1:]
     batchsize = int(batchsize)
 else:
-    datasetname = 'indep'
-    rst_file = './results/indep.tsv'
+    datasetname = 'sample'
+    rst_file = './results/sample.tsv'
     #pkl_path = './model_pkl/GAT'
     batchsize = 32
 
@@ -26,8 +26,8 @@ def collate(samples):
     p1,p2,graphs1,dmaps1,graphs2,dmaps2,labels = map(list, zip(*samples))
     return p1,p2,graphs1,dmaps1,graphs2,dmaps2,torch.tensor(labels)
 
-cmaproot = './data/indep_cmap/'
-embed_data = np.load("./data/indep_embeddings.npz")
+cmaproot = './data/sample_cmap/'
+embed_data = np.load("./data/sample_embeddings.npz")
 
 
 def default_loader(cpath,pid):
@@ -115,5 +115,5 @@ def pad_dmap(dmaplist):
     pad_dmap_tensors = pad_dmap_tensors.unsqueeze(1).cuda()
     return pad_dmap_tensors
 
-test_dataset = MyDataset(type = 'indep')
+test_dataset = MyDataset(type = 'sample')
 test_loader = DataLoader(dataset = test_dataset, batch_size = batchsize , shuffle=False,drop_last = False,collate_fn=collate)
