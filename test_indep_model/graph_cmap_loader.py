@@ -61,7 +61,7 @@ class MyDataset(Dataset):
         
         super(MyDataset,self).__init__()
         pns=[]
-        with open('./data/'+'/actions/'+type+'_cmap.actions.tsv', 'r') as fh:
+        with open('./data/'+'actions/'+type+'_cmap.actions.tsv', 'r') as fh:
             for line in fh: 
                 line = line.strip('\n')
                 line = line.rstrip('\n')
