@@ -28,9 +28,9 @@ python generate_contact_map.py
 
 ## 2.Model testing and training
 
-We have provided model files trained using peptide-protein complexes from the Propedia database (http://bioinfo.dcc.ufmg.br/propedia2/index.php/download) as positive samples, along with an independent test set. 
+We have provided model files trained using peptide-protein complexes from the Propedia database (http://bioinfo.dcc.ufmg.br/propedia2/index.php/download) as positive samples, along with an sample test set. 
 To run model predictions, Please execute the following command：  
-cd test_indep_model
+cd test_sample_model
 
 ```
 python my_main_test.py
