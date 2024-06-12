@@ -98,3 +98,4 @@ To train your own data, after generating the required files, execute the followi
 ```
 python my_main.py
 ```
+Edit By [MaHua](http://mahua.jser.me)
