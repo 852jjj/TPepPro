@@ -18,7 +18,7 @@ pip install dgl_cu101-0.6.1-cp37-cp37m-manylinux1_x86_64.whl
 Generating amino acid vectors for proteins and peptides means that you need to store all the amino acid sequences of proteins and peptides in the sample pair into a fasta file, then write the path of this fasta file to the corresponding location in the **data pre-processing/generate_embeddings.py** code, and run``` python generate_embeddings. py``` can generate an npz file that stores the amino acid vectors of all proteins and peptides in the sample pair (the amino acid vector representation of each protein/peptide generated is stored in the npy file, and the vector of the generated protein/peptide is represented as **L*1024**, where **L** is the sequence length of the protein/peptide).  
 
 To generate contact map files for proteins and peptides, you need to first find the pdb files of the proteins and peptides in Alphafold, and then write them to TPepPro according to the corresponding txt file of the sequences of all proteins and peptides used and the pdb file of the proteins and peptides in all sample pairs
-**data pre-processing/generate_contact_map.py** code, run ```python generate_contact_map.py ``to generate contact map files for proteins and peptides.  
+**data pre-processing/generate_contact_map.py** code, run ```python generate_contact_map.py ```to generate contact map files for proteins and peptides.  
 ***
 ## 2.Model testing and training
 We have provided model files trained using peptide-protein complexes from the Propedia database (http://bioinfo.dcc.ufmg.br/propedia2/index.php/download) as positive samples, along with an independent test set. 
