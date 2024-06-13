@@ -35,7 +35,7 @@ Data in are organized with the following columns：**test_sample_model/data/acti
 The input of the test sample run also includes the preprocessed amino acid vector representations of these proteins/peptides and their corresponding contact map files, and then their corresponding amino acid vector representations are stored in the form of npy files in the **test_sample_model/data/sample_embeddings.npz** file, and their contact map files are stored in the format of npz files **test_sample_model/data/sample_cmap folder**.  
 
 Take, for example, **1a1m_A 1a1m_C 1** in the sample pair used for testing.  
-**The amino acid vector representation of the generated receptor 1a1m_A is in the form of: **  
+**The amino acid vector representation of the generated receptor 1a1m_A is in the form of:** 
 [[ 0.15398422 -0.23978221 -0.01549047 ... -0.18346733 -0.09291625
   -0.01021743]  
  [ 0.4489373  -0.02665013 -0.17931005 ... -0.1891016   0.1553362
@@ -49,7 +49,7 @@ Take, for example, **1a1m_A 1a1m_C 1** in the sample pair used for testing.
    0.35552794]  
  [-0.2167282  -0.02923655  0.09628326 ... -0.01234592 -0.02105464
   -0.09572704]]    
-**The amino acid vector of the generated receptor 1a1m_A is represented in the shape of: **(278, 1024)  
+**The amino acid vector of the generated receptor 1a1m_A is represented in the shape of：**(278, 1024)  
 **The representation of the contact map file of the generated receptor 1a1m_A is：**  
 [[0 1 1 ... 0 0 0]  
  [1 0 1 ... 0 0 0]  
@@ -88,11 +88,11 @@ Take, for example, **1a1m_A 1a1m_C 1** in the sample pair used for testing.
 The output of the test sample run is the prediction result of the test sample pair saved in the form of an xls file, which is in the following format:  
 **序号    receptor	peptide	label	predict_score	predict_label**  
 **序号：** The ordinal number used to represent the sample pair.  
-**receptor：**receptor ID  
-**peptide：**peptide ID  
-**label：** Indicates the classification of sample pairs, if the label is 1, the sample pair will be marked as interactive, and if the label is 0, the sample pair will be marked as having no interaction.  
-**predict_score：** Marking the possibility of interaction between sample pairs, here we set the threshold to 0.5, if the prediction score of the model for sample pairs is greater than or equal to 0.5, then predict that there is interaction between sample pairs, and vice versa, predict that there is no interaction between sample pairs.  
-**predict_label：**indicates whether there is interaction in the prediction of the sample pair, if the predict label is 1, the sample pair is predicted to have interaction, if the predict label is 0, it is predicted that the sample pair has no interaction.  
+**receptor：** receptor ID
+**peptide：** peptide ID 
+**label：** Indicates the classification of sample pairs, if the label is 1, the sample pair will be marked as interactive, and if the label is 0, the sample pair will be marked as having no interaction. 
+**predict_score：** Marking the possibility of interaction between sample pairs, here we set the threshold to 0.5, if the prediction score of the model for sample pairs is greater than or equal to 0.5, then predict that there is interaction between sample pairs, and vice versa, predict that there is no interaction between sample pairs. 
+**predict_label：** indicates whether there is interaction in the prediction of the sample pair, if the predict label is 1, the sample pair is predicted to have interaction, if the predict label is 0, it is predicted that the sample pair has no interaction. 
 ***
 To train your own data, after generating the required files, execute the following command to perform 5-fold cross-validation.  
 **cd model**
