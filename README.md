@@ -88,7 +88,7 @@ Take, for example, **1a1m_A 1a1m_C 1** in the sample pair used for testing.
 The output of the test sample run is the prediction result of the test sample pair saved in the form of an xls file, which is in the following format:  
 **序号    receptor	peptide	label	predict_score	predict_label**  
 **序号：** The ordinal number used to represent the sample pair.    
-**receptor：** receptor ID
+**receptor：** receptor ID  
 **peptide：** peptide ID   
 **label：** Indicates the classification of sample pairs, if the label is 1, the sample pair will be marked as interactive, and if the label is 0, the sample pair will be marked as having no interaction.   
 **predict_score：** Marking the possibility of interaction between sample pairs, here we set the threshold to 0.5, if the prediction score of the model for sample pairs is greater than or equal to 0.5, then predict that there is interaction between sample pairs, and vice versa, predict that there is no interaction between sample pairs.   
