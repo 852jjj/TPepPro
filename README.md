@@ -109,7 +109,7 @@ For example, consider the testing sample pair `1a1m_A 1a1m_C 1`:
 
 The prediction result of the test sample pair is saved in an XLS file with the following format:
 
-- `序号`: Ordinal number representing the sample pair.
+- `index`: Ordinal number representing the sample pair.
 - `receptor`: Receptor ID.
 - `peptide`: Peptide ID.
 - `label`: Classification of sample pairs (1 for interactive, 0 for non-interactive).
@@ -118,7 +118,7 @@ The prediction result of the test sample pair is saved in an XLS file with the f
 
 Example:
 
-| 序号 | receptor | peptide | label | predict_score | predict_label |
+| index | receptor | peptide | label | predict_score | predict_label |
 |----|-----------|---------|------|---------------|---------------|
 | 1  | 1a1m_A    | 1a1m_C  | 1    | 0.85          | 1             |
 
