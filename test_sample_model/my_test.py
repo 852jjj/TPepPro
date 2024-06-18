@@ -57,7 +57,7 @@ def test(model, device, loader):
              
             # 先填标题 
             # sheet1.write(a,b,c) 函数中参数a、b、c分别对应行数、列数、单元格内容
-            sheet1.write(0, 0, "序号") # 第1行第1列
+            sheet1.write(0, 0, "index") # 第1行第1列
             sheet1.write(0, 1, "receptor") # 第1行第2列
             sheet1.write(0, 2, "peptide") # 第1行第3列
             sheet1.write(0, 3, "label") # 第1行第4列
