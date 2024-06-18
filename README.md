@@ -36,7 +36,7 @@ To preprocess the proteins and peptides in the input sample pairs, generate thei
 We have provided model files trained using peptide-protein complexes from the [Propedia database](http://bioinfo.dcc.ufmg.br/propedia2/index.php/download) as positive samples, along with an independent test set. To run model predictions, execute the following command:
 
 ```sh
-cd test_indep_model
+cd test_sample_model
 python my_main_test.py
 ```
 
