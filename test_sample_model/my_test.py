@@ -67,7 +67,7 @@ def test(model, device, loader):
             # 循环填入数据
             for i in range(len(predict_score_list)):
                 #print(predict_score[i])
-                sheet1.write(i + 1, 0, i) # 第1列序号
+                sheet1.write(i + 1, 0, i) # 第1列index
                 sheet1.write(i + 1, 1, str(p1[i])) # 第2列receptor    
                 sheet1.write(i + 1, 2, str(p2[i]))  # 第3列peptide
                 sheet1.write(i + 1, 3, str(y[i])) # 第4列真实标签    
