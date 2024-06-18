@@ -120,7 +120,7 @@ Example:
 
 | index | receptor | peptide | label | predict_score | predict_label |
 |----|-----------|---------|------|---------------|---------------|
-| 1  | 1a1m_A    | 1a1m_C  | 1    | 0.85          | 1             |
+| 0  | 1a1m_A    | 1a1m_C  | 1    | 0.85          | 1             |
 
 #### Training Your Own Data
 
