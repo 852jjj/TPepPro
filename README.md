@@ -1,7 +1,7 @@
-# TPepPro
+### TPepPro
 Prediction of peptide-protein interactions based on Transformer.
 ***
-# Install Dependencies
+### Install Dependencies
 Python ver. == 3.7  
 For others, run the following command:   
 ```
